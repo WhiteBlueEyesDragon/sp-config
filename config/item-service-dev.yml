@@ -5,8 +5,8 @@ spring:
     config:
       override-none: true
     
-#server:
-#  port: 8001
+server:
+  port: 8001
   
 eureka:
   client:
@@ -20,15 +20,3 @@ management:
     web:
       exposure:
         include: hystrix.stream
----
-spring:
-  profiles: item1
-  
-server:
-  port: 8001
----
-spring:
-  profiles: item2
-
-server:
-  port: 8002
